@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/***** Général *****/
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: #EAEAEA;
+}
+
+h1, h2{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+/***** Navigation *****/
+.navsection1{
+    padding: 2% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0px 2px 4px 0px #0000003b;
+}
+
+.navsection1 img{
+    width: 50%;
+}
+
+.navsection2{
+    padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navsection2 span{
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+/***** intro section *****/
+
+.introsection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 105px;
+}
+
+.introsection1, .introsection2{
+   text-align: center;
+}
+
+.introsection1 p{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.introsection2 div{
+    background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 80%);
+    box-shadow: 0px 2px 4px 0px #00000063;
+    padding: 13px 0px;
+    border-radius: 20px;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.introsection2 a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/***** Fonctionnement section *****/
+
+.stepsection{
+    margin: 0 5%;
+}
+
+.stepsection1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stepsection1, .stepsection2, .stepsection3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.stepnumber{
+    background-color: #9356DC;
+    color: #FFFFFF;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+.stepnumber span{
+    margin: auto;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px 0px #0000003b;
+    padding: 5%;
+    gap: 5%;
+}
+
+.step span{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/***** Responsive *****/
+/***** Tablet *****/
+@media  screen and (min-width: 768px) {
+    
+}
+/***** Desktop *****/
+@media  screen and (min-width: 1024px) {
+    
+}
