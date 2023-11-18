@@ -14,6 +14,10 @@ nav{
     background-color: #EAEAEA;
 }
 
+footer{
+    background-color: #353535;
+}
+
 h1, h2{
     font-family: Roboto;
     font-size: 24px;
@@ -198,8 +202,82 @@ h1, h2{
     font-weight: 300;
 }
 
+/***** Footer *****/
+footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logofooter{
+    margin: 5% 5% 0 5%;
+}
+
+.logofooter span{
+    color: #FFFFFF;
+    font-family: Shrikhand;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.listfooter{
+    margin: 0 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.listfooter i {
+    color: white;
+}
+
+.listfooter i a{
+   margin-left: 10px;
+}
+
+.listfooter a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
+/*footer{
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+footer i{
+    color: white;
+}
+
+footer i a{
+    margin-left: 10px;
+}
+
+footer div span{
+    margin: 5% 0;
+    color: #FFFFFF;
+    font-family: Shrikhand;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}*/
 /***** Responsive *****/
 /***** Tablet *****/
 @media  screen and (min-width: 768px) {
