@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/***** Général *****/
+* {
+    font-family: Roboto;
+}
+body {
+    margin: 0;
+}
+
+footer{
+    background-color: #353535;
+    width: 100%;
+    height: 187px;
+}
+
+nav{
+    background-color: #EAEAEA;
+}
+
+header {
+    width: 100%;
+    height: 113px;
+}
+
+/***** Header *****/
+.sectionh{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.header-logo{
+    padding: 14px 17px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px #0000003b;
+}
+
+.header-logo div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-logo div img{
+    width: 168px;
+    margin: 0 auto;
+}
+
+.header-search {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px;
+    align-items: center;
+}
+
+.header-search input{
+    width: 90px;
+    border: none;
+    background-color: transparent;
+}
+
+/***** Main *****/
+/***** img background menu *****/
+.img-menu{
+    width: 100%;
+    height: 275px;
+}
+
+.img-menu img{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    position: relative;
+}
+
+/***** menu *****/
+.menu{
+    background-color: #F6F6F6;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.menu-head{
+    padding: 0 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.menu-title h2{
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+}
+.menu-icon i{
+    font-size: 22px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.menu-list {
+    padding: 0 13px;
+}
+
+.menu-entre h3{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+}
+.menu-entre hr{
+    width: 40px;
+    margin: 0;
+    border-color: #99E2D0;
+}
+
+.menu-card{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 0px #00000063;
+    padding: 12px 15px;
+}
+
+.card-name h4{
+    margin: 0;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-name p{
+    margin: 0;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-price p{
+    margin: 0;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10.5px;
+}
+
+.menu-btn{
+    margin: 0 auto 40px;
+}
+
+.btn-first{
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 80%);
+    color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px #00000063;
+    padding: 16px 48px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/***** Footer *****/
+
+footer .sectionf {
+    width: auto;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-logo a {
+    color: #FFFFFF;
+    font-family: Shrikhand;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.footer-list div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-list i  {
+    color: #FFFFFF;
+    width: 11px;
+    height: 13px;
+}
+
+.footer-list i a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.footer-list a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/***** Responsive *****/
+/***** Tablet *****/
+@media  (min-width: 768px) {
+
+}
+
+/***** Desktop *****/
+@media  (min-width: 1024px) {
+    /***** General *****/
+    footer {
+        height: 114px;
+    }
+    /***** Main *****/
+    
+    /***** Footer *****/
+    footer .sectionf {
+        width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 90px;
+        align-items: baseline;
+        padding: 60px 40px 0 40px;
+    }
+    
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-list div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
