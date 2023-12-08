@@ -24,6 +24,41 @@ header {
     height: 113px;
 }
 
+/***** Effects *****/
+.loader
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 1;
+    animation: disparition 3s forwards;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid rgb(255, 255, 255, 0.6);
+    border-top-color: #FF79DA;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading{
+    from {transform: rotate(0turn)}
+    to{transform: rotate(1turn)}
+}
+
+@keyframes disparition{
+    to{opacity: 0; visibility: hidden;}
+}
+
 /***** Header *****/
 .sectionh{
     display: flex;
@@ -111,7 +146,7 @@ header {
 }
 
 .sectionfonction div h2{
-    margin: 105px 20px 26px 20px;
+    margin: 65px 20px 26px 20px;
 }
 
 .second-block{
@@ -240,6 +275,43 @@ header {
     font-size: 22px;
 }
 
+.card-icon input[type="checkbox"]{
+    appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    background: #000000;
+}
+
+.card-icon input[type="checkbox"]:before, .card-icon input[type="checkbox"]:after{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background: #000000;
+    
+}
+
+input[type="checkbox"]:checked{
+    background: rgba(255,121,218,1);
+}   
+
+input:checked[type="checkbox"]:before, input:checked[type="checkbox"]:after{
+    background: linear-gradient(-45deg, rgba(255,121,218,1) 25%, rgba(147,86,220,1) 85%);
+}
+input[type="checkbox"]:before{
+    bottom: 0px;
+    left: -8px;
+}
+input[type="checkbox"]:after{
+    top: -8px;
+    right: 0px;
+}
 
 /***** Footer *****/
 
@@ -311,6 +383,7 @@ footer .sectionf {
     /***** Main *****/
     /***** section fonction *****/
     .sectionfonction{
+        margin-top: 40px;
         margin-bottom: 66px;
     }
 
