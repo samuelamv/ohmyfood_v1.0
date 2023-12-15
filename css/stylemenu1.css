@@ -129,6 +129,21 @@ header {
     gap: 40px
 }
 
+.menu-icon label .hidden {
+    visibility: hidden;
+}
+
+.menu-icon label input[type=checkbox]:checked ~ i {
+    font-weight: 900;
+    opacity: 1;
+    background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: likeAnim 1.5s;
+            animation: likeAnim 1.5s;
+}
+
 .menu-list {
     padding: 0 13px;
 }
